@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbuks Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <img src="./Images/logo.png" class="logo" />
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Menu</a></li>
+          <li><a href="">What's New</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </header>
+
+      <!--content-->
+      <div class="content">
+        <div class="textBox">
+          <h2>
+            It's not just Coffee <br />
+            It's <span>Starbuks</span>
+          </h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+            cumque doloribus. Mollitia aliquam voluptatem corporis quia
+            exercitationem incidunt numquam quo laboriosam ut! Molestiae,
+            perspiciatis voluptatibus dignissimos obcaecati aperiam aliquid
+            magnam.
+          </p>
+          <a href="">Learn More</a>
+          <div class="imgBox">
+            <img src="./Images/img1.png" class="Starbuks" />
+          </div>
+        </div>
+      </div>
+
+      <!--thumb-->
+      <ul class="thumb">
+        <li>
+          <img
+            src="./Images/thumb1.png"
+            onclick="imgSlider('./Images/thumb1.png')"
+          />
+        </li>
+        <li>
+          <img
+            src="./Images/thumb2.png"
+            onclick="imgSlider('./Images/thumb2.png')"
+          />
+        </li>
+        <li>
+          <img
+            src="./Images/thumb3.png"
+            onclick="imgSlider('./Images/thumb3.png')"
+          />
+        </li>
+      </ul>
+
+      <!--sei-->
+      <ul class="sei">
+        <li>
+          <a href=""><img src="./Images/instagram.png" /></a>
+        </li>
+        <li>
+          <a href=""><img src="./Images/facebook.png" /></a>
+        </li>
+        <li>
+          <a href=""><img src="./Images/twitter.png" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <!--js-->
+    <script>
+      function imgSlider(anything) {
+        document.querySelector(".Starbuks").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+    </script>
+  </body>
+</html>
